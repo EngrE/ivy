@@ -95,13 +95,13 @@
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -197,9 +197,10 @@ implementations.</p></li>
 <li><p><strong>&lt;https</strong> (//data-apis.org/array-api/latest/&gt;`. This docstring is an extension of)</p></li>
 <li><p><strong>the `docstring &lt;https</strong> (<em>//data-apis.org/array-api/latest/API_specification/</em>)</p></li>
 <li><p>generated/signatures.set_functions.unique_counts.html&gt;` in the standard.</p></li>
-<li><p><em>Both the description and the type hints above assumes an array input for simplicity,</em></p></li>
-<li><p>but this function is <em>nestable</em>, and therefore also accepts <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code></p></li>
-<li><p><em>instances in place of any of the arguments.</em></p></li>
+<li><p><em>The descriptions above assume an array input for simplicity, but</em></p></li>
+<li><p>the method also accepts <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> instances in place of</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> or <code class="code docutils literal notranslate"><span class="pre">ivy.NativeArray</span></code> instances, as shown in the type hints</p></li>
+<li><p><em>and also the examples below.</em></p></li>
 </ul>
 </p>
 </dd>
@@ -240,8 +241,8 @@ implementations.</p></li>
 <dl class="py function">
 <dt class="sig sig-object py" id="ivy.array.array_methods.unique_counts">
 <span class="sig-prename descclassname">ivy.Array.</span></span><span class="sig-name descname"><span class="pre">unique_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/set.html#ArrayWithSet.unique_counts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.array_methods.unique_counts" title="Permalink to this definition"></a></dt>
-<dd><p>ivy.Array instance method variant of <a href="./unique_counts/unique_counts_functional.html">ivy.unique_counts</a>. for <a href="./unique_counts/unique_counts_functional.html">ivy.unique_counts</a> simply
-wraps the function, and so the docstring for ivy.unique_counts also applies
+<dd><p>ivy.Array instance method variant of <a href="./unique_counts/unique_counts_functional.html">ivy.unique_counts</a>. This method simply
+wraps the function, and so the docstring for <a href="./unique_counts/unique_counts_functional.html">ivy.unique_counts</a> also applies
 to this method with minimal changes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
