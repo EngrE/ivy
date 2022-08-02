@@ -203,23 +203,8 @@
 <span class="sd">              must have the same shape as ``x`` and must have the default array index data</span>
 <span class="sd">              type.</span>
 
-<span class="sd">             .. note::</span>
-<span class="sd">                The order of unique elements is not specified and may vary between</span>
-<span class="sd">                implementations.</span>
-
-<span class="sd">          This method conforms to the `Array API Standard</span>
-<span class="sd">          &lt;https://data-apis.org/array-api/latest/&gt;`_. This docstring is an extension of</span>
-<span class="sd">          the `docstring &lt;https://data-apis.org/array-api/latest/API_specification/</span>
-<span class="sd">          generated/signatures..set_functions.unique_inverse.html&gt;`_</span>
-<span class="sd">          in the standard.</span>
-
 <span class="sd">          Examples</span>
 <span class="sd">          --------</span>
-
-<span class="sd">        &gt;&gt;&gt; x = ivy.array([3,4,7,4,2,8,5])</span>
-<span class="sd">        &gt;&gt;&gt; y = ivy.unique_inverse(x)</span>
-<span class="sd">        &gt;&gt;&gt; print(y)</span>
-<span class="sd">        unique_inverse(values=ivy.array([2, 3, 4, 5, 7, 8]), inverse_indices=ivy.array([1, 2, 4, 2, 0, 5, 3]))</span>
 
 <span class="sd">        &gt;&gt;&gt; x = ivy.array([0.3,0.4,0.7,0.4,0.2,0.8,0.5])</span>
 <span class="sd">        &gt;&gt;&gt; y = ivy.unique_inverse(x)</span>
@@ -238,7 +223,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
