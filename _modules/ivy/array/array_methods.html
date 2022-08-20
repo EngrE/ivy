@@ -79,14 +79,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -4221,8 +4221,8 @@
 <span class="sd">      Parameters</span>
 <span class="sd">      ----------</span>
 <span class="sd">      self</span>
-<span class="sd">          input array. If ``x`` has more than one dimension, the function must flatten</span>
-<span class="sd">          ``x`` and return the unique elements of the flattened array.</span>
+<span class="sd">          input array. If ``x`` has more than one dimension, the function must</span>
+<span class="sd">          flatten ``x`` and return the unique elements of the flattened array.</span>
 
 <span class="sd">      Returns</span>
 <span class="sd">      -------</span>
@@ -4233,10 +4233,10 @@
 <span class="sd">          - first element must have the field name ``values`` and must be an array</span>
 <span class="sd">          containing the unique elements of ``x``. The array must have the same data</span>
 <span class="sd">          type as ``x``.</span>
-<span class="sd">          - second element must have the field name ``inverse_indices`` and must be an</span>
-<span class="sd">          array containing the indices of ``values`` that reconstruct ``x``. The array</span>
-<span class="sd">          must have the same shape as ``x`` and must have the default array index data</span>
-<span class="sd">          type.</span>
+<span class="sd">          - second element must have the field name ``inverse_indices`` and must be</span>
+<span class="sd">          an array containing the indices of ``values`` that reconstruct ``x``.</span>
+<span class="sd">          The array must have the same shape as ``x`` and must have the default</span>
+<span class="sd">          array index data type.</span>
 
 <span class="sd">      Examples</span>
 <span class="sd">      --------</span>
@@ -4244,7 +4244,8 @@
 <span class="sd">    &gt;&gt;&gt; x = ivy.array([0.3,0.4,0.7,0.4,0.2,0.8,0.5])</span>
 <span class="sd">    &gt;&gt;&gt; y = x.unique_inverse()</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
-<span class="sd">    unique_inverse(values=ivy.array([0.2, 0.3, 0.4, 0.5, 0.7, 0.8]), inverse_indices=ivy.array([1, 2, 4, 2, 0, 5, 3]))</span>
+<span class="sd">    unique_inverse(values=ivy.array([0.2, 0.3, 0.4, 0.5, 0.7, 0.8]),</span>
+<span class="sd">    inverse_indices=ivy.array([1, 2, 4, 2, 0, 5, 3]))</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
